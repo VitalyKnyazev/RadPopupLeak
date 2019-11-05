@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:primitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+             mc:Ignorable="d"
+             x:Class="App1.Page1">
+    <ContentPage.Content>
+		<StackLayout>
+			<Button Text="Whatever">
+				<primitives:RadPopup.Popup>
+					<primitives:RadPopup>
+						<Label Text="Whatever"/>
+					</primitives:RadPopup>
+				</primitives:RadPopup.Popup>
+			</Button>
+			<Label Text="Just click 'Back' button and watch growing memory usage"/>
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>

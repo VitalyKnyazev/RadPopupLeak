@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App1.MainPage">
+
+	<StackLayout Margin="10">
+		<Button Text="Click me" Clicked="Button_OnClicked"/>
+		<Button Text="Collect" Clicked="Collect_OnClicked"/>
+		<Label x:Name="memoryUsageLabel" TextColor="Red"/>
+		<Label Text="Click 'Click me' button and go back a few times, watch GC memory usage growing. Click 'Collect' to force memory collection - nothing helps. Then comment RadPopup and try again - memory is released as expected."/>
+	</StackLayout>
+
+</ContentPage>
